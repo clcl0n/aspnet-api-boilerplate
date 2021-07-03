@@ -1,0 +1,11 @@
+config:
+    target: http://localhost:5000
+    phases:
+        - duration: 60 #sec
+          arrivalRate: 20
+
+scenarios:
+    - name: get_weatherforecast
+      flow:
+          - get:
+                url: /weatherforecast
